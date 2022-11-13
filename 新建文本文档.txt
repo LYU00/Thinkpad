@@ -1,0 +1,80 @@
+MX Component 117-570766844
+GX Works 570-986818410
+<Grid>
+<StackPanel>
+<GroupBox Header:="连接三菱PLC"Margin="5"BorderBrush="Blue">
+<StackPanel Orientation="Horizontal">
+<TextBlock Text="逻辑站号："/>
+<TextBox Name="txtlogicNumber"Text="4"Width="80"HorizontalAlignment="Left"
+Margin="20 0"/>
+<Button Content="PLC"Name="btnConnect"Padding="10 0"
+Click="btnConnect_click"/
+</StackPanel>
+</GroupBox>
+<GroupBox Header="软元件的单个读取/写入"Margin="5050"BorderBrush="Blue">
+<StackPanel Margin="2">
+<GroupBox Header:=“单个读取"BorderBrush=“Green">
+<StackPanel Orientation="Horizontal">
+<TextBlock Text="软元件："/>
+<TextBox Name="txtRedComponent"Width="80"/>
+<TextBlock Text="值："Margin="100"/>
+<TextBox Name="txtRed"Width="80"Margin="10 0"/>
+<Button Content=""Name="btnRedValue"Padding="10 0"
+Click="btnRedValue_Click"/>
+</StackPanel>
+</GroupBox>
+</StackPanel>
+</GroupBox>
+<GroupBox Header="软元件的批量读取/写入"Margin="5050"BorderBrush="8lue">
+<StackPanel Margin="2">
+<GroupBox Header=“批量读取”BorderBrush="Green"Height:="160">
+<StackPanel Orientation="Horizontal">
+<TextBlock Text=“软元件：#Margin=“50“/>
+<TextBox Name="txtBatchComponent"Width="80"TextWrapping="Wrap"
+AcceptsReturn="True"/>
+<TextBlock Text="值：”Margin="5 0"/>
+<TextBox Name="txtSortRead"Width="80"Margin=10 0"/>
+<StackPanel Margin="0 5">
+<StackPanel Orientation="Horizontal">
+<TextB1 ock Text=读取个数："Marg1n="0 0 15 0"/>
+<TextBox Name="txtDataSize"Width="80"VerticalAlignment="Top"
+He1ght="24"/>
+</StackPanel>
+<StackPanel Margin="0 10">
+<Button Content="顺序读取"Height="30”Width=“80"
+Name="btnBatchReadValue"Padding="5 0 5 0"Click="btnBatchReadValue_Click"/>
+<Button Content="随机读取"Height="30”Width="80"
+Name="btnRandomBatchReadValue"Margin="0 10"Padding=5 0 5 0"
+Click="btnRandomBatchReadValue_click"/>
+</StackPanel>
+</StackPanel>
+</StackPanel>
+</GroupBox>
+<GroupBox Header="批量写入”BorderBrush=:"Green"Height="150">
+<StackPanel Orientation="Horizontal">
+<TextBlock Text=“软元件：“Margin=“50“/>
+<TextBox Name="txtBatchWriteComponent"Width="80"TextWrapping="Wrap"
+AcceptsReturn="True"/
+<TextBlock Text="值："Margin="50"/>
+<TextBox Name="txtBatchWrite"Width="80"Margin="10 0"
+TextWrapping="Wrap"AcceptsReturn="True"/>
+<StackPanel Margin="0 5">
+<StackPanel Orientation="Horizontal">
+<TextB1 ock Text=“写入个数："Margin="00156"/>
+<TextBox Name="txtDataWritesize"Width="80"
+VerticalAlignment="Top"Height="24"/>
+</StackPanel>
+<StackPanel Margin="0 10">
+<Button Content="顺序写入"Height="30"Width:="80"
+Name="btnBatchWriteValue"Padding="2 0 2 0"Click="btnBatchWriteValue_click"/
+<Button Content:="随机写入"Height="30"Width:="80"
+Name="btnRandomBatchWriteValue"Margin="0 10"Padding="2 0 2 0"
+Click="btnRandomBatchWritevalue_click"/>
+</StackPanel>
+</StackPanel>
+</StackPanel>
+</GroupBox>
+</StackPanel>
+</GroupBox>
+</StackPanel>
+</Grid>
